@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Bhargava Reddy</title>
+    <script src="https://kit.fontawesome.com/68d46ea074.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="port1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">My Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="gallery.html">My Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT ME</h1>
+        <form action=" " class="form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="input" placeholder="Enter Your Name" required pattern="[a-zA-Z ]+">
+                <span class="message" id="nameMessage">Please enter a valid name (letters and spaces only).</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input" placeholder="Enter Your Email" required>
+                <span class="message" id="emailMessage">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg" rows="5" class="input" placeholder="Enter Your Message" required minlength="10" maxlength="40"></textarea>
+                <span class="message" id="msgMessage">Message must be between 10 and 40 characters.</span>
+            </div>
+            <input type="submit" value="SUBMIT" id="submit">
+            
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bhargava Reddy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
